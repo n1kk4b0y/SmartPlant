@@ -99,7 +99,7 @@ Os recursos abaixo serão utilizados para documentar, organizar e acompanhar o d
 
 - **Repositório GitHub:** [SmartPlant](https://github.com/n1kk4b0y/SmartPlant)
 - **GitHub Wiki:** [Documentação do projeto](https://github.com/n1kk4b0y/SmartPlant/wiki)
-- **GitHub Projects:** INSERIR LINK DO QUADRO DE ACOMPANHAMENTO
+- **GitHub Projects:** [INSERIR LINK DO QUADRO DE ACOMPANHAMENTO](https://github.com/users/n1kk4b0y/projects/4)
 - **Documentação técnica:** (ADCIONAREMOS LOGO MAIS)
 
 ## Versionamento e Colaboração
