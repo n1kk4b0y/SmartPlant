@@ -12,7 +12,7 @@ Desenvolver uma solução digital que permita gerenciar os espaços verdes do IF
 
 O sistema busca solucionar problemas relacionados à organização descentralizada das atividades, proporcionando maior transparência, controle e continuidade na manutenção das hortas e jardins da instituição.
 
-## 👨‍💻 Integrantes da Equipe
+## Integrantes da Equipe
 
 Projeto desenvolvido por estudantes do curso de Bacharelado em Engenharia de Computação do IFRJ — Campus Niterói.
 
