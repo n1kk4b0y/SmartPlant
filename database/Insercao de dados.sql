@@ -1,0 +1,141 @@
+-- =====================================================================
+-- (ii) SCRIPT DE INSERÇÃO DE DADOS (20 REGISTROS EM CADA TABELA)
+-- =====================================================================
+
+-- 1. USUARIOS (20 registros)
+INSERT INTO usuarios (nome, vinculo_ifrj, campus, identificador, credencial, estado_conta, identificador_validado) VALUES
+('Ana Paula Souza', 'servidor', 'Maracanã', '2014001', 'hash_cred_01', 'ativa', TRUE),
+('Carlos Eduardo Lima', 'servidor', 'Duque de Caxias', '2016045', 'hash_cred_02', 'ativa', TRUE),
+('Mariana Rocha Alves', 'servidor', 'Nilópolis', '2018112', 'hash_cred_03', 'ativa', TRUE),
+('Rafael Henrique Costa', 'servidor', 'São Gonçalo', '2019088', 'hash_cred_04', 'ativa', TRUE),
+('Beatriz Mendes Ferreira', 'estudante', 'Maracanã', '2023101045', 'hash_cred_05', 'ativa', TRUE),
+('Lucas Gabriel Santos', 'estudante', 'Maracanã', '2023102089', 'hash_cred_06', 'ativa', TRUE),
+('Julia Cristina Oliveira', 'estudante', 'Duque de Caxias', '2024100312', 'hash_cred_07', 'ativa', TRUE),
+('Pedro Augusto Pereira', 'estudante', 'Nilópolis', '2022104510', 'hash_cred_08', 'ativa', TRUE),
+('Fernanda Ribeiro Gomes', 'estudante', 'São Gonçalo', '2024105901', 'hash_cred_09', 'ativa', TRUE),
+('Thiago Almeida Martins', 'estudante', 'Maracanã', '2023109821', 'hash_cred_10', 'inativa', TRUE),
+('Camila Vieira Barbosa', 'estudante', 'Duque de Caxias', '2025101122', 'hash_cred_11', 'ativa', TRUE),
+('Diego Fernandes Araujo', 'terceirizado', 'Maracanã', 'diego.terc@ifrj.edu.br', 'hash_cred_12', 'ativa', TRUE),
+('Patricia Carvalho Melo', 'terceirizado', 'Nilópolis', 'patricia.terc@ifrj.edu.br', 'hash_cred_13', 'pendente', FALSE),
+('Bruno Nascimento Dias', 'terceirizado', 'São Gonçalo', '21998877661', 'hash_cred_14', 'ativa', TRUE),
+('Larissa Monteiro Nunes', 'estudante', 'Nilópolis', '2024107733', 'hash_cred_15', 'ativa', TRUE),
+('Gustavo Henrique Pinto', 'servidor', 'Pinheiral', '2015077', 'hash_cred_16', 'ativa', TRUE),
+(' Amanda Teixeira Castro', 'estudante', 'Pinheiral', '2023108844', 'hash_cred_17', 'ativa', TRUE),
+('Vitor Hugo Correia', 'outro', 'Maracanã', 'vitor.comunidade@gmail.com', 'hash_cred_18', 'ativa', FALSE),
+('Renata Cavalcanti Brito', 'estudante', 'Duque de Caxias', '2022106655', 'hash_cred_19', 'bloqueada', TRUE),
+('Eduardo Soares Fonseca', 'servidor', 'Volta Redonda', '2020033', 'hash_cred_20', 'ativa', TRUE);
+
+-- 2. ESPACOS_VERDES (20 registros)
+INSERT INTO espacos_verdes (nome, categoria, localizacao, descricao, culturas_plantios, coordenador_id, contatos, area_m2) VALUES
+('Horta Agroecológica Bloco A', 'horta', 'Campus Maracanã - Fundos Bloco A', 'Cultivo sem agrotóxicos com fins didáticos', 'Alface, couve, rúcula, manjericão', 1, 'horta.maracana@ifrj.edu.br', 120.50),
+('Jardim Sensorial', 'jardim', 'Campus Maracanã - Praça Central', 'Espaço de convivência com plantas aromáticas', 'Lavanda, hortelã, alecrim, capim-limão', 1, 'jardim.maracana@ifrj.edu.br', 85.00),
+('Horta Comunitária Caxias', 'horta', 'Campus Duque de Caxias - Lateral', 'Produção de hortaliças e temperos', 'Tomate cereja, cebolinha, salsinha, coentro', 2, 'horta.caxias@ifrj.edu.br', 150.00),
+('Jardim das Borboletas', 'jardim', 'Campus Duque de Caxias - Entrada', 'Atração de polinizadores nativos', 'Zínia, beijo-de-frade, lantana', 2, 'verde.caxias@ifrj.edu.br', 64.25),
+('Horta Didática Nilópolis', 'horta', 'Campus Nilópolis - Área Sul', 'Aulas práticas de biologia e sustentabilidade', 'Almeirão, espinafre, cenoura, rabanete', 3, 'horta.nilopolis@ifrj.edu.br', 110.00),
+('Jardim Medicinal Nilópolis', 'jardim', 'Campus Nilópolis - Anexo Lab', 'Coleção de plantas medicinais catalogadas', 'Boldo, babosa, camomila, erva-cidreira', 3, 'medicinais.nilopolis@ifrj.edu.br', 45.80),
+('Horta Vertical São Gonçalo', 'horta', 'Campus São Gonçalo - Pátio Coberto', 'Sistema em estruturas verticais e vasos', 'Morango, manjericão, pimenta, salsa', 4, 'horta.sg@ifrj.edu.br', 38.00),
+('Bosque de Transição SG', 'outro', 'Campus São Gonçalo - Fundos', 'Recuperação de área sombreada', 'Ipê, pitanga, araçá, samambaia', 4, 'bosque.sg@ifrj.edu.br', 310.00),
+('Horta Experimental Pinheiral', 'horta', 'Campus Pinheiral - Setor Agro', 'Testes de cobertura de solo e compostagem', 'Milho, feijão, abóbora, mandioca', 16, 'agro.pinheiral@ifrj.edu.br', 420.00),
+('Pomar Didático Pinheiral', 'outro', 'Campus Pinheiral - Encosta Leste', 'Frutíferas de médio porte', 'Goiaba, acerola, limão, amora', 16, 'pomar.pinheiral@ifrj.edu.br', 500.00),
+('Jardim de Chuva Volta Redonda', 'jardim', 'Campus Volta Redonda - Estacionamento', 'Drenagem sustentável com espécies nativas', 'Tiririca-do-brejo, lírio-do-brejo, grama', 20, 'sust.vr@ifrj.edu.br', 95.40),
+('Horta Escolar VR', 'horta', 'Campus Volta Redonda - Área Norte', 'Integração com projetos de extensão', 'Couve-manteiga, repolho, bertalha', 20, 'horta.vr@ifrj.edu.br', 130.00),
+('Cantinho das PANC Maracanã', 'horta', 'Campus Maracanã - Lateral Biblioteca', 'Plantas Alimentícias Não Convencionais', 'Ora-pro-nóbis, taioba, peixinho-da-horta', 1, 'panc.maracana@ifrj.edu.br', 52.00),
+('Jardim de Suculentas Caxias', 'jardim', 'Campus Duque de Caxias - Hall', 'Baixo consumo hídrico em canteiros elevados', 'Echeveria, cacto-paraguaio, sedum', 2, 'suculentas.caxias@ifrj.edu.br', 28.50),
+('Horta de Raízes Nilópolis', 'horta', 'Campus Nilópolis - Setor Oeste', 'Foco em tubérculos e raízes', 'Batata-doce, inhame, mandioca, cenoura', 3, 'raizes.nilopolis@ifrj.edu.br', 140.00),
+('Jardim da Paz São Gonçalo', 'jardim', 'Campus São Gonçalo - Jardim Interno', 'Área de descanso e leitura', 'Jasmim, gardênia, azaleia', 4, 'paz.sg@ifrj.edu.br', 72.00),
+('Estufa de Mudas Pinheiral', 'outro', 'Campus Pinheiral - Viveiro', 'Produção de mudas para o campus', 'Mudas diversas de hortaliças e árvores', 16, 'viveiro.pinheiral@ifrj.edu.br', 88.00),
+('Horta Temperos VR', 'horta', 'Campus Volta Redonda - Refeitório', 'Ervas aromáticas de colheita frequente', 'Orégano, tomilho, manjericão, sálvia', 20, 'temperos.vr@ifrj.edu.br', 40.00),
+('Canteiro Polinizador Maracanã', 'jardim', 'Campus Maracanã - Próximo Quadra', 'Flora apícola e melífera', 'Girassol, cosmos, tagetes', 1, 'abelhas.maracana@ifrj.edu.br', 55.00),
+('Horta Circular Nilópolis', 'horta', 'Campus Nilópolis - Praça Verde', 'Canteiros em espiral de permacultura', 'Manjericão, cebolinha, alface, morango', 3, 'circular.nilopolis@ifrj.edu.br', 78.00);
+
+-- 3. PARTICIPACOES_ESPACO (20 registros)
+INSERT INTO participacoes_espaco (usuario_id, espaco_id, papel, data_inicio, situacao) VALUES
+(1, 1, 'coordenador', '2024-02-01', 'ativa'),
+(5, 1, 'bolsista', '2025-03-01', 'ativa'),
+(6, 1, 'voluntário', '2025-04-10', 'ativa'),
+(12, 1, 'voluntário', '2025-02-15', 'ativa'),
+(1, 2, 'coordenador', '2024-02-01', 'ativa'),
+(6, 2, 'voluntário', '2025-05-01', 'ativa'),
+(2, 3, 'coordenador', '2024-03-01', 'ativa'),
+(7, 3, 'bolsista', '2025-03-10', 'ativa'),
+(11, 3, 'voluntário', '2025-04-20', 'ativa'),
+(2, 4, 'coordenador', '2024-03-01', 'ativa'),
+(3, 5, 'coordenador', '2024-02-15', 'ativa'),
+(8, 5, 'bolsista', '2025-02-20', 'ativa'),
+(15, 5, 'voluntário', '2025-03-18', 'ativa'),
+(3, 6, 'coordenador', '2024-02-15', 'ativa'),
+(4, 7, 'coordenador', '2024-04-01', 'ativa'),
+(9, 7, 'bolsista', '2025-03-05', 'ativa'),
+(14, 7, 'voluntário', '2025-04-02', 'ativa'),
+(16, 9, 'coordenador', '2024-01-20', 'ativa'),
+(17, 9, 'bolsista', '2025-03-12', 'ativa'),
+(20, 12, 'coordenador', '2024-05-01', 'ativa');
+
+-- 4. ATIVIDADES_PONTUAIS (20 registros)
+INSERT INTO atividades_pontuais (espaco_id, tipo, titulo, descricao, data_hora, prioridade, situacao) VALUES
+(1, 'plantio', 'Plantio de mudas de couve', 'Preparo de covas e plantio no canteiro 1', '2026-08-10 09:00:00', 'alta', 'Concluída'),
+(1, 'limpeza', 'Remoção de ervas espontâneas', 'Capina manual nos corredores da horta', '2026-09-05 14:00:00', 'média', 'Concluída'),
+(1, 'colheita', 'Colheita semanal de rúcula', 'Colheita para doação e uso didático', '2026-11-18 08:30:00', 'alta', 'Pendente'),
+(2, 'manutenção', 'Poda de limpeza no jardim sensorial', 'Poda leve de alecrim e lavanda', '2026-09-12 10:00:00', 'média', 'Concluída'),
+(3, 'semeadura', 'Semeadura de coentro e salsinha', 'Semeio direto em linha nos canteiros centrais', '2026-08-22 09:30:00', 'média', 'Concluída'),
+(3, 'mutirão', 'Mutirão de compostagem', 'Reviramento das leiras de composto orgânico', '2026-11-20 14:30:00', 'alta', 'Aceita'),
+(4, 'plantio', 'Inclusão de flores melíferas', 'Plantio de zínias para atração de borboletas', '2026-09-18 15:00:00', 'baixa', 'Pendente'),
+(5, 'limpeza', 'Limpeza da calha e drenagem', 'Desobstrução da saída de água pluvial', '2026-08-30 08:00:00', 'urgente', 'Concluída'),
+(5, 'colheita', 'Colheita de rabanetes', 'Avaliação de tamanho e colheita', '2026-11-15 16:00:00', 'média', 'Pendente'),
+(6, 'manutenção', 'Identificação de placas botânicas', 'Substituição de placas desgastadas pelo sol', '2026-10-02 10:30:00', 'baixa', 'Concluída'),
+(7, 'plantio', 'Plantio de morangueiros em calhas', 'Instalação de 30 mudas no sistema vertical', '2026-09-25 09:00:00', 'alta', 'Concluída'),
+(7, 'manutenção', 'Revisão do gotejamento superior', 'Checagem de vazamentos nos tubos', '2026-11-19 11:00:00', 'urgente', 'Pendente'),
+(8, 'mutirão', 'Mutirão de plantio de nativas', 'Plantio de mudas de ipê e pitanga', '2026-10-10 08:30:00', 'alta', 'Concluída'),
+(9, 'semeadura', 'Semeadura de feijão-de-porco', 'Cobertura verde na parcela experimental', '2026-09-08 13:30:00', 'média', 'Concluída'),
+(9, 'colheita', 'Colheita de abóboras', 'Colheita e pesagem para registro', '2026-11-22 09:00:00', 'alta', 'Aceita'),
+(10, 'manutenção', 'Adubação orgânica do pomar', 'Aplicação de esterco curtido ao redor das árvores', '2026-10-14 14:00:00', 'média', 'Concluída'),
+(11, 'limpeza', 'Retirada de resíduos leves', 'Coleta de folhas secas e detritos', '2026-10-20 07:30:00', 'baixa', 'Concluída'),
+(12, 'plantio', 'Plantio de repolho roxo', 'Plantio em duas linhas paralelas', '2026-11-25 09:30:00', 'média', 'Pendente'),
+(13, 'colheita', 'Colheita de ora-pro-nóbis', 'Colheita seletiva de folhas maduras', '2026-10-28 10:00:00', 'baixa', 'Cancelada'),
+(15, 'semeadura', 'Semeadura de cenoura', 'Sulcos rasos com substrato leve', '2026-11-27 08:00:00', 'alta', 'Pendente');
+
+-- 5. ROTINAS_REGA (20 registros)
+INSERT INTO rotinas_rega (espaco_id, dias_semana, horario_turno, orientacoes, ativa) VALUES
+(1, 'Seg, Qua, Sex', 'manhã', 'Rega moderada com regador de crivo fino até 8h', TRUE),
+(1, 'Ter, Qui', 'tarde', 'Complemento apenas se o solo estiver seco a 3 cm', TRUE),
+(2, 'Seg, Qua, Sex', 'manhã', 'Evitar encharcar plantas aromáticas', TRUE),
+(3, 'Seg, Ter, Qua, Qui, Sex', 'manhã', 'Rega diária nos canteiros de mudas recém-plantadas', TRUE),
+(3, 'Sab', 'manhã', 'Rega geral de manutenção no fim de semana', TRUE),
+(4, 'Ter, Qui, Sab', 'tarde', 'Rega leve após o pico de calor', TRUE),
+(5, 'Seg, Qua, Sex', 'manhã', 'Manter umidade uniforme nas raízes', TRUE),
+(5, 'Ter, Qui', 'noite', 'Rega noturna em dias muito quentes', TRUE),
+(6, 'Seg, Qua, Sex', 'manhã', 'Rega suave nas plantas medicinais', TRUE),
+(7, 'Seg, Ter, Qua, Qui, Sex', 'manhã', 'Acionar linha de gotejamento por 15 minutos', TRUE),
+(8, 'Qua, Sab', 'manhã', 'Foco nas mudas jovens recém-plantadas', TRUE),
+(9, 'Seg, Qua, Sex', 'tarde', 'Rega por aspersão controlada', TRUE),
+(10, 'Ter, Sex', 'manhã', 'Rega profunda nas árvores frutíferas', TRUE),
+(11, 'Seg, Qui', 'manhã', 'Rega leve nas espécies adaptadas à umidade', TRUE),
+(12, 'Seg, Qua, Sex', 'manhã', 'Rega regular sem encharcar folhas', TRUE),
+(13, 'Ter, Qui', 'manhã', 'Rega moderada nas PANC', TRUE),
+(14, 'Sex', 'manhã', 'Rega espaçada (a cada 7 dias) para suculentas', TRUE),
+(15, 'Seg, Qua, Sex', 'tarde', 'Manter solo úmido para germinação e raízes', TRUE),
+(17, 'Seg, Ter, Qua, Qui, Sex', 'manhã', 'Nebulização suave na estufa de mudas', TRUE),
+(18, 'Seg, Qua, Sex', 'manhã', 'Rega leve nos canteiros de temperos', TRUE);
+
+-- 6. OCORRENCIAS_REGA (20 registros)
+INSERT INTO ocorrencias_rega (rotina_id, data_prevista, situacao, observacao) VALUES
+(1, '2026-11-02', 'Concluída', 'Realizada às 07:20'),
+(1, '2026-11-04', 'Concluída', 'Realizada às 07:35'),
+(1, '2026-11-06', 'Concluída', 'Solo bem hidratado'),
+(1, '2026-11-09', 'Atrasada', 'Chuva leve no início da manhã, adiada'),
+(1, '2026-11-16', 'Pendente', 'Prevista para hoje'),
+(2, '2026-11-03', 'Concluída', 'Sem necessidade extra'),
+(3, '2026-11-04', 'Concluída', 'Concluída sem intercorrências'),
+(4, '2026-11-05', 'Concluída', 'Concluída às 07:10'),
+(4, '2026-11-06', 'Concluída', 'Concluída às 07:15'),
+(5, '2026-11-07', 'Concluída', 'Equipe de sábado presente'),
+(6, '2026-11-05', 'Concluída', 'Realizada às 16:10'),
+(7, '2026-11-04', 'Concluída', 'Concluída pela manhã'),
+(7, '2026-11-13', 'Atrasada', 'Falta de voluntário no turno'),
+(10, '2026-11-05', 'Concluída', 'Ciclo de 15 min concluído'),
+(10, '2026-11-16', 'Pendente', 'Programada para manhã'),
+(12, '2026-11-04', 'Concluída', 'Aspersão funcionando normalmente'),
+(13, '2026-11-06', 'Concluída', 'Pomar irrigado'),
+(15, '2026-11-04', 'Concluída', 'Concluída'),
+(19, '2026-11-05', 'Concluída', 'Nebulização ok'),
+(19, '2026-11-16', 'Pendente', 'Verificar nível do reservatório');
