@@ -2,7 +2,7 @@
 SELECT id, nome, campus, identificador
 FROM usuarios
 WHERE id IN (
-    SELECT usuario_id
+    SELECT usuario_i
     FROM participacoes_espaco
     WHERE papel = 'bolsista' AND situacao = 'ativa'
 );
