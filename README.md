@@ -100,7 +100,7 @@ Os recursos abaixo serão utilizados para documentar, organizar e acompanhar o d
 - **Repositório GitHub:** [SmartPlant](https://github.com/n1kk4b0y/SmartPlant)
 - **GitHub Wiki:** [Documentação do projeto](https://github.com/n1kk4b0y/SmartPlant/wiki)
 - **GitHub Projects:** [Quadro Kamban/Projects](https://github.com/users/n1kk4b0y/projects/4)
-- **Documentação técnica:** [documentação técnica](https://github.com/n1kk4b0y/SmartPlant/blob/main/docs/Template_Documentacao_Tecnica_Projeto_horta.docx)
+- **Documentação técnica Engenharia de Software:** [documentação técnica](https://github.com/n1kk4b0y/SmartPlant/blob/main/docs/Template_Documentacao_Tecnica_Projeto_horta.docx)
 
 ## Versionamento e Colaboração
 
